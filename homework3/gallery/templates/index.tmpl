@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    {% for p in photo %}
+        <div class="item"><a href="{{ big_photo }}/{{ p }}"><img src="{{ small_photo }}/{{ p }}"></a></div>
+    {% endfor %}
+</div>
+</body>
+
+</html>
